@@ -1,0 +1,76 @@
+/* IMPORTED FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* CSS REST */
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+  }
+/* ROOT VARIABLES */
+:root {
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+
+--midnight-blue: #1F2A44;
+--olive-green: #76885B;
+--champagne-gold: #E5C185;
+--linen: #F8F4EC;
+--dark-charcoal: #2B2B2B;
+--soft-white: #FAF9F6;
+
+
+}
+/* GLOBAL STYLES (mobile first/small) */
+
+header {
+    background-color: var(--midnight-blue);
+    display: block;
+    margin: 0 auto;
+}
+header > img {
+    display: block;
+    margin: 0 auto;
+    width: 230PX;
+
+}
+h1, header > p {
+text-align: center;
+color: var(--linen);
+}
+h1{
+    font-size: 4em;
+}
+header > p {
+    font-size: 1.35em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+nav ul{
+    list-style: none;
+    background-color: var(--champagne-gold);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+
+}
+
+nav li{
+    list-style: none;
+    padding-top: 10px;
+     padding-bottom: 10px;
+    
+
+}
+nav li a{
+    text-decoration: none;
+    color: var(--midnight-blue);
+    font-weight: bolder;
+    font-size: 1.6em;
+
+
+
+}
