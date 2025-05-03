@@ -1,3 +1,4 @@
+/* CSS BY NIC GARCIA */
 /* IMPORTED FONTS */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
@@ -173,4 +174,51 @@ footer a {
 }
 footer p:last-child{
     padding-top: 40px;
+}
+
+/* MEDIA QUERY MEDIUM */
+
+
+@media screen and (min-width:600px) {
+    #gallery ul {
+
+        grid-template-columns: 1fr 1fr;
+    }
+    #offerings > ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+    }
+    #offerings > ul > li:last-child {
+        grid-column: 1 / -1;
+    }
+
+}
+
+/* MEDIA QUERY LARGE */
+
+
+@media screen and (min-width:900px) {
+    #gallery ul {
+
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+}
+
+/* MEDIA QUERY X-LARGE */
+
+@media screen and (min-width:1200px) {
+    main{
+        margin-left: 200px;
+        margin-right: 200px;
+
+    }
+    #gallery ul {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
 }
